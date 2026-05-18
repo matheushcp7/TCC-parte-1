@@ -5,7 +5,7 @@ const App = () => {
   const [formData, setFormData] = useState({
     titulo: "",
     conteudo: "",
-    publicada: true,
+    publicada: false,
   });
   const fetchMensagens = async () => {
     const response = await api.get("/mensagens");
